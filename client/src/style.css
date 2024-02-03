@@ -1,0 +1,359 @@
+.app {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9176470588);
+}
+.app .container {
+  width: 1400px;
+}
+.app .container .link {
+  text-decoration: none;
+  color: inherit;
+}
+.app .container .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.app .container .auth form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #ac96c2;
+  width: 200px;
+  gap: 20px;
+  border-radius: 8px;
+}
+.app .container .auth form h1 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+  align-content: center;
+}
+.app .container .auth form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 8px;
+}
+.app .container .auth form button {
+  padding: 10px;
+  border: none;
+  background-color: #613759;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9176470588);
+  border-radius: 8px;
+}
+.app .container .auth form p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9176470588);
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.861);
+  padding: 10px;
+  border-radius: 8px;
+}
+.app .container .auth form span {
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+}
+.app .container .navbar .container {
+  padding: 0px 0px;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.9176470588);
+}
+.app .container .navbar .container .logo {
+  justify-content: left;
+}
+.app .container .navbar .container .logo img {
+  width: 100px;
+}
+.app .container .navbar .container .links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.app .container .navbar .container .links h6 {
+  font-size: 17px;
+  font-weight: 300;
+  padding: 11px;
+}
+.app .container .navbar .container .links h6:hover {
+  color: #ac96c2;
+}
+.app .container .navbar .container .links span {
+  cursor: pointer;
+  padding: 11px;
+  margin-right: 11px;
+  font-size: 20px;
+}
+.app .container .navbar .container .links #logoutButton {
+  cursor: pointer;
+  padding: 11px;
+  margin-right: 15px;
+}
+.app .container .navbar .container .links #logoutButton:hover {
+  color: rgba(255, 255, 255, 0.9176470588);
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: red;
+}
+.app .container .navbar .container .links .write {
+  color: #ac96c2;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  padding: 11px;
+  margin-right: 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-size: 17px;
+}
+.app .container .navbar .container .links .write:hover {
+  color: #000000;
+  border: 1px solid #ac96c2;
+  border-radius: 8px;
+  background-color: #ac96c2;
+}
+.app .container footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.9176470588);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.app .container footer img {
+  height: 50px;
+}
+.app .container .home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.app .container .home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+.app .container .home .posts .post:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.app .container .home .posts .post .img {
+  flex: 2;
+  position: relative;
+}
+.app .container .home .posts .post .img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ac96c2;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+.app .container .home .posts .post .img img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .container .home .posts .post .content h1 {
+  font-size: 48px;
+}
+.app .container .home .posts .post .content p {
+  font-size: 18px;
+}
+.app .container .home .posts .post .content button {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9176470588);
+  border: 1px solid #613759;
+  color: #613759;
+}
+.app .container .home .posts .post .content button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.9176470588);
+  background-color: #ac96c2;
+  color: #000000;
+}
+.app .container .single {
+  display: flex;
+  gap: 50px;
+}
+.app .container .single .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.app .container .single .content img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .content .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.app .container .single .content .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .content .user span {
+  font-weight: bold;
+}
+.app .container .single .content .edit {
+  display: flex;
+  gap: 5px;
+}
+.app .container .single .content .edit img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.app .container .single .content h1 {
+  font-size: 42px;
+  color: #333;
+}
+.app .container .single .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+.app .container .single .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.app .container .single .menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+.app .container .single .menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app .container .single .menu .post img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .menu .post h2 {
+  color: #555;
+}
+.app .container .single .menu .post button {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7.5px 15px;
+  border: none;
+  cursor: pointer;
+  color: #613759;
+  background-color: rgba(255, 255, 255, 0.9176470588);
+  border: 1px solid #613759;
+}
+.app .container .single .menu .post button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.9176470588);
+  background-color: #ac96c2;
+  color: #000000;
+}
+.app .container .add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.app .container .add .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .content input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer {
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer .editor {
+  height: 100%;
+  border: none;
+}
+.app .container .add .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .menu .item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+.app .container .add .menu .item h1 {
+  font-size: 20px;
+}
+.app .container .add .menu .item .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app .container .add .menu .item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .add .menu .item .buttons :first-child {
+  cursor: pointer;
+  color: #613759;
+  background-color: rgba(255, 255, 255, 0.9176470588);
+  border: 1px solid #613759;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .buttons :last-child {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9176470588);
+  background-color: #ac96c2;
+  border: 1px solid #ac96c2;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .buttons :last-child:hover {
+  border: 1px solid rgba(255, 255, 255, 0.9176470588);
+  background-color: #613759;
+  color: rgba(255, 255, 255, 0.9176470588);
+}
+.app .container .add .menu .item .cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #613759;
+}/*# sourceMappingURL=style.css.map */
